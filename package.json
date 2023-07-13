@@ -1,0 +1,58 @@
+{
+  "name": "langchain-ts-starter",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "main": "./dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "tsup": "tsup",
+    "build": "tsup",
+    "start:example01": "tsx -r dotenv/config src/example01/index.ts",
+    "start:example02": "tsx -r dotenv/config src/example02/index.ts",
+    "start:example03": "tsx -r dotenv/config src/example03/index.ts",
+    "start:example04": "tsx -r dotenv/config src/example04/index.ts",
+    "start:example05": "tsx -r dotenv/config src/example05/index.ts",
+    "start:example06": "tsx -r dotenv/config src/example06/index.ts",
+    "start:example07": "tsx -r dotenv/config src/example07/index.ts",
+    "start:example08": "tsx -r dotenv/config src/example08/index.ts",
+    "start:example09": "tsx -r dotenv/config src/example09/index.ts",
+    "lint": "eslint src",
+    "lint:fix": "npm run lint --fix",
+    "format": "prettier --write \"**/*.ts\"",
+    "format:check": "prettier --list-different \"**/*.ts\""
+  },
+  "keywords": [
+    "langchain",
+    "starter",
+    "template",
+    "node",
+    "typescript",
+    "llm"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "langchain": "^0.0.39",
+    "serpapi": "^1.1.1",
+    "tsup": "^6.7.0"
+  },
+  "devDependencies": {
+    "@tsconfig/recommended": "^1.0.2",
+    "@types/js-yaml": "^4",
+    "@types/node": "^18.15.5",
+    "@typescript-eslint/eslint-plugin": "^5.51.0",
+    "@typescript-eslint/parser": "^5.51.0",
+    "eslint": "^8.33.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-prettier": "^4.2.1",
+    "prettier": "^2.8.3",
+    "tsx": "^3.12.3",
+    "typescript": "^5.0.4"
+  }
+}
